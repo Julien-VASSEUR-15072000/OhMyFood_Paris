@@ -1,9 +1,10 @@
+
+@import '../utils/mixins';
+
 body {
     max-width: 768px;
     margin: auto;
 }
-
-@import '../utils/mixins';
 
 header {
     text-align: center;
@@ -17,7 +18,7 @@ header {
 }
 
 h1 {
-    font-family: 'Shrikhand', cursive;
+    @include Shrikhand;
     margin: 0;
 }
 
@@ -30,14 +31,12 @@ h1 {
 }
 
 .location__i {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flexAICenterJCCenter;
     margin: 17px;
 }
 
 .réservez_menu {
-    background: #F6F6F6;
+    @include backF6F6F6;
     padding: 20px 0 57px 0;
 }
 
