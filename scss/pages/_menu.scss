@@ -1,0 +1,134 @@
+@import '../utils/mixins';
+
+@import '../components/hover';
+
+
+.menu__main_div__appetizer__article__section__title {
+    margin: 0 0 5px 0;
+    height: 21px;
+    font-size: 18px;
+    @include fontRoboto500;
+}
+
+.menu__main_div__appetizer__article__section_p {
+    margin: 0;
+    height: 19px;
+    @include fontRoboto300;
+    font-size: 15px;
+}
+
+.menu__main_div__appetizer__article__section__title, .menu__main_div__appetizer__article__section_p {
+    overflow: hidden;
+}
+
+.justifyContentSpaceBeteween {
+    justify-content: space-between;
+}
+
+.header {
+    position: relative;
+}
+
+.title {
+    text-align: center;
+    width: 100%;
+}
+
+.header__a {
+    position: absolute;
+    bottom: 50%;
+    transform: translateY(50%);
+    left: 23px;
+    text-decoration: none;
+    color: #353535;
+}
+
+.header__a__i {
+    @include flexAICenterJCCenter;
+}
+
+.menu {
+    position: relative;
+}
+
+.menu__img {
+    position: absolute;
+    top: -220px;
+    object-fit: cover;
+    width: 100%;
+    z-index: -1;
+}
+
+.menu__main_div {
+    @include backF6F6F6;
+    padding: 32px 0 0 0;
+    margin: 220px 0 0 0;
+    border-radius: 40px 40px 0px 0px;
+}
+
+.menu__main_div__section {
+    margin: 0 0 42px 0;
+}
+
+.menu__main_div__title {
+    @include Shrikhand;
+    margin: 0 24px 0 0;
+}
+
+.menu__main_div__i {
+    @include flexAICenterJCCenter;
+}
+
+.menu__main_div__appetizer {
+    margin-bottom: 40px;
+}
+
+.menu__main_div__appetizer__title {
+    margin: 0 0 12px 3.4%;
+}
+
+.menu__main_div__appetizer__article {
+    position: relative;
+    overflow: hidden;
+    background: #FFFFFF;
+    box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+    border-radius: 15.0431px;
+    width: 93.1%;
+    margin: auto;
+    margin-bottom: 12px;
+}
+
+.menu__main_div__appetizer__article__section {
+    overflow: hidden;
+    width: 82.2%;
+    margin: 12px 0 12px 12px;
+}
+
+.menu__main_div__appetizer__article__price {
+    @include fontRoboto500;
+    display: flex;
+    margin: 0 14px 14px 0;
+    flex-direction: column-reverse;
+}
+
+.menu__main_div__appetizer__article__divI {
+    @include flexAICenterJCCenter;
+    position: absolute;
+    transform: translateX(0px);
+    right: -60px;
+    background: #99E2D0;
+    width: 59px;
+    height: 69px;
+    margin: 0;
+    transform-origin: right;
+}
+
+.menu__main_div__appetizer__article__divI__i {
+    @include flexAICenterJCCenter;
+    font-size: 16px;
+    width: 20px;
+    height: 20px;
+    color: #99E2D0;
+    background: #FFFFFF;
+    border-radius: 20px;
+}

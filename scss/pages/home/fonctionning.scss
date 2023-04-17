@@ -1,0 +1,67 @@
+@import '../../utils/mixins';
+
+.flexWrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.justifyContentCenter {
+    justify-content: center;
+}
+
+.displayFlex {
+    display: flex;
+}
+
+.fonctionnement {
+    padding-top: 48px;
+    height: 392px;
+}
+
+.fonctionnement__title {
+    margin: 0 0 26px 20px;
+    font-size: 24px;
+}
+
+.fonctionnement__cards {
+    @include backF6F6F6;
+    width: 85.9%;
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    margin: 12.5px 0px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    height: 72px;
+
+}
+
+.fonctionnement__cards__num {
+    @include fontRoboto500;
+    @include flexAICenterJCCenter;
+    position: absolute;
+    font-size: 14px;
+    left: -12.5px;
+    bottom: 50%;
+    transform: translateY(50%);
+    width: 25px;
+    height: 25px;
+    margin: 0 0 0 0;
+    border-radius: 50px;
+    background: #9356DC;
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+.fonctionnement__cards__i {
+    @include flexAICenterJCCenter;
+    margin-left: 10px;
+}
+
+.fonctionnement__cards__p {
+    @include fontRoboto500;
+    width: 211px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}

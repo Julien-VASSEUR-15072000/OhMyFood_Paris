@@ -12,7 +12,7 @@
 
 <body>
     <header>
-        <section class="title">
+        <section class="mainTitle">
             <h1>
                 ohmyfood
             </h1>
@@ -23,16 +23,18 @@
                 Paris, Belleville
             </p>
         </div>
-        <section class="réservez_menu">
+        <section class="reserve_menu">
             <h2>
                 Réservez le menu qui vous convient
             </h2>
-            <p class="réservez_menu__p">
+            <p class="reserve_menu__p">
                 Découvrez des restaurants d'exception, sélectionnés par nos soins.
             </p>
-            <button class="réservez_menu__button">
-                Explorez nos restaurants
-            </button>
+            <a href="#restaurants">
+                <button class="reserve__menu__button">
+                    Explorez nos restaurants
+                </button>
+            </a>
         </section>
     </header>
     <main>
@@ -58,7 +60,7 @@
                 </div>
             </div>
         </section>
-        <section class="restaurants">
+        <section id="restaurants" class="restaurants">
             <h2 class="restaurants__title">Restaurants</h2>
             <div class="flexWrap justifyContentCenter">
                 <a class="restaurants__card" href="./Menu - La palette du goût.html">
@@ -77,7 +79,10 @@
                                 Ménilmontant
                             </p>
                         </div>
-                        <i class="restaurants__card__h3PI__i fa-thin fa-heart"></i>
+                        <div class="restaurants__card__h3PI__i">
+                            <i class="restaurants__card__h3PI__i__regular fa-regular fa-heart"></i>
+                            <i class="restaurants__card__h3PI__i__solid fa-solid fa-heart"></i>
+                        </div>
                     </div>
                 </a>
                 <a class="restaurants__card" href="./Menu - La note enchantée.html">

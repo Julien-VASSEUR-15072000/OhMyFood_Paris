@@ -1,0 +1,24 @@
+.réservez_menu__button:hover {
+    animation: réservez_menu__button; 
+    animation-duration: 1000ms;
+}
+    
+.reserve__menu__button:hover {
+    animation-name: reserve__menu__button; 
+    animation-duration: 250ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+}
+ 
+
+@keyframes reserve__menu__button {
+    0%{
+        background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    }
+    100%{
+        background: linear-gradient(193.33deg, rgb(147 86 220) -11.44%, rgb(255 121 218) 123.93%);
+        opacity: 85%;
+    }
+}
+
