@@ -26,3 +26,32 @@ footer {
     @include flexAICenterJCCenter;
     margin-right: 11px;
 }
+
+@media screen and (min-width: 768px){
+
+    footer {
+        padding-top: 57px;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .footer__title {
+        margin-right: 50px;
+    }
+
+    .footer__footers {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .footer__footers__div {
+        margin: 0 4px;
+    }
+
+    .footer__footers__p {
+        @include fontRoboto300;
+        @include flexAICenterJCCenter;
+        margin: 0 4px;
+        align-items: center;
+    }
+}

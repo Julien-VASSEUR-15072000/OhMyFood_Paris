@@ -293,6 +293,32 @@ footer {
   margin-right: 11px;
 }
 
+@media screen and (min-width: 768px) {
+  footer {
+    padding-top: 57px;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .footer__title {
+    margin-right: 50px;
+  }
+  .footer__footers {
+    display: flex;
+    flex-direction: row;
+  }
+  .footer__footers__div {
+    margin: 0 4px;
+  }
+  .footer__footers__p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 4px;
+    align-items: center;
+  }
+}
 .flexWrap {
   display: flex;
   flex-wrap: wrap;
@@ -306,17 +332,17 @@ footer {
   display: flex;
 }
 
-.fonctionnement {
+.fonctionning {
   padding-top: 48px;
   height: 392px;
 }
 
-.fonctionnement__title {
+.fonctionning__title {
   margin: 0 0 26px 20px;
   font-size: 24px;
 }
 
-.fonctionnement__cards {
+.fonctionning__cards {
   background: #F6F6F6;
   width: 85.9%;
   display: flex;
@@ -328,7 +354,7 @@ footer {
   height: 72px;
 }
 
-.fonctionnement__cards__num {
+.fonctionning__cards__num {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   display: flex;
@@ -348,14 +374,14 @@ footer {
   font-size: 14px;
 }
 
-.fonctionnement__cards__i {
+.fonctionning__cards__i {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-left: 10px;
 }
 
-.fonctionnement__cards__p {
+.fonctionning__cards__p {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   width: 211px;
@@ -364,6 +390,24 @@ footer {
   align-items: center;
 }
 
+@media screen and (min-width: 768px) {
+  body {
+    max-width: 1440px;
+  }
+  .fonctionning__title {
+    margin: 0 0 26px 12.5%;
+  }
+  .fonctionning {
+    height: 100%;
+    padding: 38px 0;
+  }
+  .fonctionning__cards {
+    width: 22.4%;
+    min-width: 250px;
+    margin: 12px 18px;
+    padding: 0 0 0 12px;
+  }
+}
 h3 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -455,6 +499,18 @@ a {
   display: none;
 }
 
+@media screen and (min-width: 768px) {
+  body {
+    max-width: 1440px;
+  }
+  .restaurants__title {
+    margin: 0 0 1px 12.5%;
+  }
+  .restaurants__card {
+    width: 34%;
+    margin: 25px 50px;
+  }
+}
 .menu__main_div__appetizer__article:hover .menu__main_div__appetizer__article__divI {
   animation-name: activation__food;
   animation-duration: 200ms;

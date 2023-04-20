@@ -13,17 +13,17 @@
     display: flex;
 }
 
-.fonctionnement {
+.fonctionning {
     padding-top: 48px;
     height: 392px;
 }
 
-.fonctionnement__title {
+.fonctionning__title {
     margin: 0 0 26px 20px;
     font-size: 24px;
 }
 
-.fonctionnement__cards {
+.fonctionning__cards {
     @include backF6F6F6;
     width: 85.9%;
     display: flex;
@@ -36,7 +36,7 @@
 
 }
 
-.fonctionnement__cards__num {
+.fonctionning__cards__num {
     @include fontRoboto500;
     @include flexAICenterJCCenter;
     position: absolute;
@@ -53,15 +53,38 @@
     font-size: 14px;
 }
 
-.fonctionnement__cards__i {
+.fonctionning__cards__i {
     @include flexAICenterJCCenter;
     margin-left: 10px;
 }
 
-.fonctionnement__cards__p {
+.fonctionning__cards__p {
     @include fontRoboto500;
     width: 211px;
     font-size: 16px;
     display: flex;
     align-items: center;
+}
+
+@media screen and (min-width: 768px){
+
+    body {
+        max-width: 1440px;
+    }
+
+    .fonctionning__title{
+        margin: 0 0 26px 12.5%;
+    }
+
+    .fonctionning {
+        height: 100%;
+        padding: 38px 0;
+    }
+
+    .fonctionning__cards {
+        width: 22.4%;
+        min-width: 250px;
+        margin: 12px 18px;
+        padding: 0 0 0 12px;
+    }
 }
