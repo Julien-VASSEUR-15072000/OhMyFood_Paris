@@ -1,71 +1,113 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-.réservez_menu__button:hover {
-  animation: réservez_menu__button;
-  animation-duration: 1000ms;
-}
-
 .reserve__menu__button:hover {
-  animation-name: reserve__menu__button;
+  animation-name: button;
   animation-duration: 250ms;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
   cursor: pointer;
 }
 
-@keyframes reserve__menu__button {
+.button:hover {
+  animation-name: button;
+  animation-duration: 250ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes button {
   0% {
-    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    background: linear-gradient(360deg, #9356DC -11.44%, #FF79DA 123.93%);
   }
   100% {
-    background: linear-gradient(193.33deg, rgb(147, 86, 220) -11.44%, rgb(255, 121, 218) 123.93%);
+    background: linear-gradient(360deg, #9356DC -11.44%, #FF79DA 123.93%);
     opacity: 85%;
   }
 }
+.iDivHeart:hover .iHearSolid {
+  display: block;
+  background: -webkit-linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.iDivHeart:hover .iHearRegular {
+  display: none;
+}
+
 .menu__main_div__appetizer__article:hover .menu__main_div__appetizer__article__divI {
   animation-name: activation__food;
-  animation-duration: 250ms;
+  animation-duration: 200ms;
   animation-timing-function: linear;
   transform-origin: right;
   animation-fill-mode: forwards;
 }
 .menu__main_div__appetizer__article:hover .menu__main_div__appetizer__article__price {
-  transition: 250ms linear;
-  transform: translateX(-60px);
+  animation-name: activation__food;
+  animation-duration: 200ms;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+.menu__main_div__appetizer__article:hover .menu__main_div__appetizer__article__section {
+  animation-name: text__overflow;
+  animation-duration: 200ms;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  transform-origin: left;
 }
 
 @keyframes activation__food {
-  from {
+  0% {
     transform: translateX(0px);
   }
-  to {
+  100% {
     transform: translateX(-60px);
   }
 }
-.réservez_menu__button:hover {
-  animation: réservez_menu__button;
-  animation-duration: 1000ms;
+@keyframes text__overflow {
+  0% {
+    transform: scaleX(1);
+  }
+  100% {
+    width: calc(82.2% - 70px);
+  }
 }
-
 .reserve__menu__button:hover {
-  animation-name: reserve__menu__button;
+  animation-name: button;
   animation-duration: 250ms;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
   cursor: pointer;
 }
 
-@keyframes reserve__menu__button {
+.button:hover {
+  animation-name: button;
+  animation-duration: 250ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes button {
   0% {
-    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    background: linear-gradient(360deg, #9356DC -11.44%, #FF79DA 123.93%);
   }
   100% {
-    background: linear-gradient(193.33deg, rgb(147, 86, 220) -11.44%, rgb(255, 121, 218) 123.93%);
+    background: linear-gradient(360deg, #9356DC -11.44%, #FF79DA 123.93%);
     opacity: 85%;
   }
 }
+.iDivHeart:hover .iHearSolid {
+  display: block;
+  background: -webkit-linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.iDivHeart:hover .iHearRegular {
+  display: none;
+}
+
 body {
   max-width: 768px;
   margin: auto;
@@ -123,7 +165,7 @@ h2 {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
-  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background: linear-gradient(360deg, #9356DC -11.44%, #FF79DA 123.93%);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   border-radius: 25px;
   border: none;
@@ -236,6 +278,13 @@ h3 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   margin: 0;
+  color: black;
+  text-decoration: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
 }
 
 .restaurants {
@@ -290,6 +339,7 @@ h3 {
 }
 
 .restaurants__card__h3PI {
+  position: relative;
   margin: 190px 25px 13px 13px;
   display: flex;
   justify-content: space-between;
@@ -301,32 +351,75 @@ h3 {
   margin: 6px 0 0 0;
 }
 
-.restaurants__card__h3PI__i {
+.iDivHeart {
+  position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 2029;
+  right: 25px;
+  bottom: 33px;
+}
+
+.iHearSolid {
+  display: none;
 }
 
 .menu__main_div__appetizer__article:hover .menu__main_div__appetizer__article__divI {
   animation-name: activation__food;
-  animation-duration: 250ms;
+  animation-duration: 200ms;
   animation-timing-function: linear;
   transform-origin: right;
   animation-fill-mode: forwards;
 }
 .menu__main_div__appetizer__article:hover .menu__main_div__appetizer__article__price {
-  transition: 250ms linear;
-  transform: translateX(-60px);
+  animation-name: activation__food;
+  animation-duration: 200ms;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+.menu__main_div__appetizer__article:hover .menu__main_div__appetizer__article__section {
+  animation-name: text__overflow;
+  animation-duration: 200ms;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  transform-origin: left;
 }
 
 @keyframes activation__food {
-  from {
+  0% {
     transform: translateX(0px);
   }
-  to {
+  100% {
     transform: translateX(-60px);
   }
 }
+@keyframes text__overflow {
+  0% {
+    transform: scaleX(1);
+  }
+  100% {
+    width: calc(82.2% - 70px);
+  }
+}
+.iDivHeart {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2029;
+  right: 25px;
+  bottom: 33px;
+}
+
+.iDivHeartStatic {
+  position: static;
+}
+
+.iHearSolid {
+  display: none;
+}
+
 .menu__main_div__appetizer__article__section__title {
   margin: 0 0 5px 0;
   height: 21px;
@@ -345,6 +438,8 @@ h3 {
 
 .menu__main_div__appetizer__article__section__title, .menu__main_div__appetizer__article__section_p {
   overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .justifyContentSpaceBeteween {
@@ -389,7 +484,7 @@ h3 {
 
 .menu__main_div {
   background: #F6F6F6;
-  padding: 32px 0 0 0;
+  padding: 32px 0 40px 0;
   margin: 220px 0 0 0;
   border-radius: 40px 40px 0px 0px;
 }
@@ -429,7 +524,7 @@ h3 {
 }
 
 .menu__main_div__appetizer__article__section {
-  overflow: hidden;
+  text-overflow: ellipsis;
   width: 82.2%;
   margin: 12px 0 12px 12px;
 }
@@ -466,6 +561,18 @@ h3 {
   color: #99E2D0;
   background: #FFFFFF;
   border-radius: 20px;
+}
+
+.button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  background: linear-gradient(360deg, #9356DC -11.44%, #FF79DA 123.93%);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  border: none;
+  color: white;
+  padding: 16px 35px;
 }
 
 /*# sourceMappingURL=style.css.map */

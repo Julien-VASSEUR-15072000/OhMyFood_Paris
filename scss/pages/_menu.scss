@@ -3,6 +3,22 @@
 @import '../components/hover';
 
 
+.iDivHeart {
+    position: absolute;
+    @include flexAICenterJCCenter;
+    z-index: 2029;
+    right: 25px;
+    bottom: 33px;
+}
+
+.iDivHeartStatic {
+    position: static;
+}
+
+.iHearSolid {
+    display: none;
+}
+
 .menu__main_div__appetizer__article__section__title {
     margin: 0 0 5px 0;
     height: 21px;
@@ -19,6 +35,8 @@
 
 .menu__main_div__appetizer__article__section__title, .menu__main_div__appetizer__article__section_p {
     overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .justifyContentSpaceBeteween {
@@ -61,7 +79,7 @@
 
 .menu__main_div {
     @include backF6F6F6;
-    padding: 32px 0 0 0;
+    padding: 32px 0 40px 0;
     margin: 220px 0 0 0;
     border-radius: 40px 40px 0px 0px;
 }
@@ -99,7 +117,7 @@
 }
 
 .menu__main_div__appetizer__article__section {
-    overflow: hidden;
+    text-overflow: ellipsis;
     width: 82.2%;
     margin: 12px 0 12px 12px;
 }
@@ -131,4 +149,15 @@
     color: #99E2D0;
     background: #FFFFFF;
     border-radius: 20px;
+}
+
+.button {
+    @include fontRoboto500;
+    font-size: 16px;
+    background: linear-gradient(360deg, #9356DC -11.44%, #FF79DA 123.93%);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    border: none;
+    color: white;
+    padding: 16px 35px;
 }

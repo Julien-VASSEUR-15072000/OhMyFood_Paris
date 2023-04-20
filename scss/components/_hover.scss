@@ -1,23 +1,43 @@
 .menu__main_div__appetizer__article:hover {
     & .menu__main_div__appetizer__article__divI {
         animation-name: activation__food;
-        animation-duration: 250ms;
+        animation-duration: 200ms;
         animation-timing-function: linear;
         transform-origin: right;
         animation-fill-mode: forwards;
     }
     & .menu__main_div__appetizer__article__price {
-        transition: 250ms linear;
-        transform: translateX(-60px);
+        animation-name: activation__food;
+        animation-duration: 200ms;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+    }
+    & .menu__main_div__appetizer__article__section {
+        animation-name: text__overflow;
+        animation-duration: 200ms;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+        transform-origin: left;
     }
 }
 
 @keyframes activation__food {
-from {
-    transform: translateX(0px);
+    0% {
+        transform: translateX(0px);
+    }
+
+    100% {
+        transform: translateX(-60px);
+    }
 }
 
-to {
-    transform: translateX(-60px);
-}
+@keyframes text__overflow {
+    0% {
+        transform: scaleX(1);
+    }
+
+    100% {
+        width: calc(82.2% - 70px);
+    }
+    
 }
