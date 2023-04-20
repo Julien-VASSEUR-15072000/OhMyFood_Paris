@@ -47,6 +47,15 @@ main {
 
 .index {
     animation: loader-body 2000ms 1000ms both;
+    header {
+        animation: parts 2000ms 600ms both;
+    }
+    .fonctionning {
+        animation: parts 2000ms 850ms both;
+    }
+    .restaurants {
+        animation: parts 2000ms 1100ms both;
+    }
 }
 
 @keyframes loader {
@@ -98,6 +107,17 @@ main {
 
     100% {
         opacity: 1;
+    }
+}
+
+@keyframes parts {
+
+    0% {
+        transform: translateX(-1000px);
+    }
+
+    100% {
+        transform: translateX(0px);
     }
     
 }

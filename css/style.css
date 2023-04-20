@@ -121,6 +121,15 @@ main {
 .index {
   animation: loader-body 2000ms 1000ms both;
 }
+.index header {
+  animation: parts 2000ms 600ms both;
+}
+.index .fonctionning {
+  animation: parts 2000ms 850ms both;
+}
+.index .restaurants {
+  animation: parts 2000ms 1100ms both;
+}
 
 @keyframes loader {
   0% {
@@ -161,6 +170,14 @@ main {
   }
   100% {
     opacity: 1;
+  }
+}
+@keyframes parts {
+  0% {
+    transform: translateX(-1000px);
+  }
+  100% {
+    transform: translateX(0px);
   }
 }
 .reserve__menu__button:hover {
