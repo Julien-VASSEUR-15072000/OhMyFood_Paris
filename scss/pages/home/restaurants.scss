@@ -1,17 +1,5 @@
 @import '../../utils/mixins';
 
-h3 {
-    @include fontRoboto700;
-    margin: 0;
-    color: black;
-    text-decoration: none;
-}
-
-a {
-    color: black;
-    text-decoration: none;
-}
-
 .restaurants {
     @include backF6F6F6;
     padding: 54px 0 66px 0;

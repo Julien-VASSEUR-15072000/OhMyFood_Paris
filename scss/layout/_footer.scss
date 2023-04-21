@@ -1,11 +1,5 @@
 @import '../utils/mixins';
 
-footer {
-    background: #353535;
-    color: #FFFFFF;
-    padding: 22px 0;
-}
-
 .footer__title {
     @include Shrikhand;
     margin: 0 0 16px 25px;

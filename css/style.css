@@ -1,6 +1,49 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+body {
+  max-width: 768px;
+  margin: auto;
+}
+
+header {
+  text-align: center;
+}
+
+h1 {
+  font-family: "Shrikhand", cursive;
+  margin: 0;
+}
+
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  margin: 0;
+  color: black;
+  text-decoration: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+main {
+  position: relative;
+}
+
+span {
+  display: inline-block;
+  height: 27px;
+  border-bottom: solid #99E2D0 4px;
+}
+
+footer {
+  background: #353535;
+  color: #FFFFFF;
+  padding: 22px 0;
+}
+
 .reserve__menu__button:hover {
   animation-name: button;
   animation-duration: 250ms;
@@ -34,47 +77,6 @@
 }
 .iDivHeart:hover .iHearRegular {
   display: none;
-}
-
-.menu__main_div__appetizer__article:hover .menu__main_div__appetizer__article__divI {
-  animation-name: activation__food;
-  animation-duration: 200ms;
-  animation-timing-function: linear;
-  transform-origin: right;
-  animation-fill-mode: forwards;
-}
-.menu__main_div__appetizer__article:hover .menu__main_div__appetizer__article__price {
-  animation-name: activation__food;
-  animation-duration: 200ms;
-  animation-timing-function: linear;
-  animation-fill-mode: forwards;
-}
-.menu__main_div__appetizer__article:hover .menu__main_div__appetizer__article__section {
-  animation-name: text__overflow;
-  animation-duration: 200ms;
-  animation-timing-function: linear;
-  animation-fill-mode: forwards;
-  transform-origin: left;
-}
-
-@keyframes activation__food {
-  0% {
-    transform: translateX(0px);
-  }
-  100% {
-    transform: translateX(-60px);
-  }
-}
-@keyframes text__overflow {
-  0% {
-    transform: scaleX(1);
-  }
-  100% {
-    width: calc(82.2% - 70px);
-  }
-}
-main {
-  position: relative;
 }
 
 .loader {
@@ -180,6 +182,43 @@ main {
     transform: translateX(0px);
   }
 }
+.menu__main_div__appetizer__article:hover .menu__main_div__appetizer__article__divI {
+  animation-name: activation__food;
+  animation-duration: 200ms;
+  animation-timing-function: linear;
+  transform-origin: right;
+  animation-fill-mode: forwards;
+}
+.menu__main_div__appetizer__article:hover .menu__main_div__appetizer__article__price {
+  animation-name: activation__food;
+  animation-duration: 200ms;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+.menu__main_div__appetizer__article:hover .menu__main_div__appetizer__article__section {
+  animation-name: text__overflow;
+  animation-duration: 200ms;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  transform-origin: left;
+}
+
+@keyframes activation__food {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-60px);
+  }
+}
+@keyframes text__overflow {
+  0% {
+    transform: scaleX(1);
+  }
+  100% {
+    width: calc(82.2% - 70px);
+  }
+}
 .reserve__menu__button:hover {
   animation-name: button;
   animation-duration: 250ms;
@@ -278,12 +317,6 @@ h2 {
   border: none;
   color: white;
   padding: 13px 18px;
-}
-
-footer {
-  background: #353535;
-  color: #FFFFFF;
-  padding: 22px 0;
 }
 
 .footer__title {
@@ -425,19 +458,6 @@ footer {
     padding: 0 0 0 12px;
   }
 }
-h3 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  margin: 0;
-  color: black;
-  text-decoration: none;
-}
-
-a {
-  color: black;
-  text-decoration: none;
-}
-
 .restaurants {
   background: #F6F6F6;
   padding: 54px 0 66px 0;
@@ -565,12 +585,6 @@ a {
     width: calc(82.2% - 70px);
   }
 }
-span {
-  display: inline-block;
-  height: 27px;
-  border-bottom: solid #99E2D0 4px;
-}
-
 .iDivHeart {
   position: absolute;
   display: flex;
@@ -747,6 +761,43 @@ span {
   padding: 16px 35px;
 }
 
+.menu__main_div__appetizer__article:hover .menu__main_div__appetizer__article__divI {
+  animation-name: activation__food;
+  animation-duration: 200ms;
+  animation-timing-function: linear;
+  transform-origin: right;
+  animation-fill-mode: forwards;
+}
+.menu__main_div__appetizer__article:hover .menu__main_div__appetizer__article__price {
+  animation-name: activation__food;
+  animation-duration: 200ms;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+.menu__main_div__appetizer__article:hover .menu__main_div__appetizer__article__section {
+  animation-name: text__overflow;
+  animation-duration: 200ms;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  transform-origin: left;
+}
+
+@keyframes activation__food {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-60px);
+  }
+}
+@keyframes text__overflow {
+  0% {
+    transform: scaleX(1);
+  }
+  100% {
+    width: calc(82.2% - 70px);
+  }
+}
 @media screen and (min-width: 768px) {
   body {
     background: #FFFFFF;

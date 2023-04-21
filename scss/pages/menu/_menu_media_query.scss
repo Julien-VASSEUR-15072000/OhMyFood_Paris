@@ -1,0 +1,39 @@
+@import '../../utils/mixins';
+
+@import '../../components/menu_article';
+
+@media screen and (min-width: 768px){
+    body {
+        background: #FFFFFF;
+    }
+
+    .menu__main_div {
+        width: 73.3%;
+        margin: auto;
+        margin-top: 375px;
+    }
+
+    .header {
+        background: #FFFFFF;
+    }
+
+    .menu__img {
+        top: -674px;
+        z-index: -2;
+        height: 956px;
+        width: 100%;
+    }
+
+    .menu {
+        position: relative;
+    }
+
+    .backgroundForResponsive {
+        position: absolute;
+        z-index: -1;
+        height: 1220px;
+        width: 100%;
+        top: 40px;
+        background: #FFFFFF;
+    }
+}

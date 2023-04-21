@@ -1,7 +1,7 @@
 @import './base/typography';
+@import './base/type_selectors';
 
 @import './components/buttons';
-@import './components/hover';
 @import './components/loader';
 @import './components/menu_article';
 
@@ -10,7 +10,8 @@
 
 @import './pages/home/fonctionning.scss';
 @import './pages/home/restaurants.scss';
-@import './pages/menu';
+@import './pages/menu/menu';
+@import './pages/menu/menu_media_query';
 
 @import './utils/mixins';
 @import './utils/variables';

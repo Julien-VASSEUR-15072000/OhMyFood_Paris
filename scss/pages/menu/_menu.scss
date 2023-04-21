@@ -1,12 +1,6 @@
-@import '../utils/mixins';
+@import '../../utils/mixins';
 
-@import '../components/hover';
-
-span {
-    display: inline-block;
-    height: 27px;
-    border-bottom: solid #99E2D0 4px;
-}
+@import '../../components/menu_article';
 
 .iDivHeart {
     position: absolute;
@@ -167,40 +161,4 @@ span {
     border: none;
     color: white;
     padding: 16px 35px;
-}
-
-@media screen and (min-width: 768px){
-    body {
-        background: #FFFFFF;
-    }
-
-    .menu__main_div {
-        width: 73.3%;
-        margin: auto;
-        margin-top: 375px;
-    }
-
-    .header {
-        background: #FFFFFF;
-    }
-
-    .menu__img {
-        top: -674px;
-        z-index: -2;
-        height: 956px;
-        width: 100%;
-    }
-
-    .menu {
-        position: relative;
-    }
-
-    .backgroundForResponsive {
-        position: absolute;
-        z-index: -1;
-        height: 1220px;
-        width: 100%;
-        top: 40px;
-        background: #FFFFFF;
-    }
 }
