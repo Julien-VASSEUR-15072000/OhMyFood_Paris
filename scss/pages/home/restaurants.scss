@@ -1,89 +1,86 @@
-@import '../../utils/mixins';
-
 .restaurants {
-    @include backF6F6F6;
-    padding: 54px 0 66px 0;
+  @include backF6F6F6;
+  padding: 54px 0 66px 0;
 }
 
 .restaurants__title {
-    margin: 0 0 26px 20px;
+  margin: 0 0 26px 20px;
 }
 
 .restaurants__card {
-    width: 90.7%;
-    overflow: hidden;
-    margin: auto;
-    height: 251px;
-    z-index: 1;
-    position: relative;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-    border-radius: 15px;
-    margin: 8px 0;
-    color: black;
-    text-decoration: none;
+  width: 90.7%;
+  overflow: hidden;
+  margin: auto;
+  height: 251px;
+  z-index: 1;
+  position: relative;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  margin: 8px 0;
+  color: black;
+  text-decoration: none;
 }
 
 .restaurants__card__img {
-    object-fit: cover;
-    position: absolute;
-    width: 100%;
-    height: 20px;
-    height: 231px;
-    z-index: 0;
-    top: -57px;
+  object-fit: cover;
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  height: 231px;
+  z-index: 0;
+  top: -57px;
 }
 
 .restaurants__card__new {
-    @include fontRoboto500;
-    @include flexAICenterJCCenter;
-    position: absolute;
-    z-index: 2;
-    width: 80px;
-    height: 30px;
-    right: 15px;
-    top: 15px;
-    margin: 0;
-    background: #99E2D0;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 2px;
+  @include fontRoboto500;
+  @include flexAICenterJCCenter;
+  position: absolute;
+  z-index: 2;
+  width: 80px;
+  height: 30px;
+  right: 15px;
+  top: 15px;
+  margin: 0;
+  background: #99e2d0;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 2px;
 }
 
 .restaurants__card__h3PI {
-    position: relative;
-    margin: 190px 25px 13px 13px;
-    display: flex;
-    justify-content: space-between;
+  position: relative;
+  margin: 190px 25px 13px 13px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .restaurants__card__h3PI__p {
-    @include fontRoboto300;
-    margin: 6px 0 0 0;
+  @include fontRoboto300;
+  margin: 6px 0 0 0;
 }
 
 .iDivHeart {
-    position: absolute;
-    @include flexAICenterJCCenter;
-    z-index: 2029;
-    right: 25px;
-    bottom: 33px;
+  position: absolute;
+  @include flexAICenterJCCenter;
+  z-index: 2029;
+  right: 25px;
+  bottom: 33px;
 }
 
 .iHearSolid {
-    display: none;
+  display: none;
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
+  body {
+    max-width: 1440px;
+  }
 
-    body {
-        max-width: 1440px;
-    }
+  .restaurants__title {
+    margin: 0 0 1px 12.5%;
+  }
 
-    .restaurants__title {  
-        margin: 0 0 1px 12.5%;
-    }
-
-    .restaurants__card {
-        width: 34%;
-        margin: 25px 50px;
-    }
+  .restaurants__card {
+    width: 34%;
+    margin: 25px 50px;
+  }
 }

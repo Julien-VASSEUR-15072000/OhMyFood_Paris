@@ -2,7 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 body {
-  max-width: 768px;
   margin: auto;
 }
 
@@ -35,12 +34,12 @@ main {
 span {
   display: inline-block;
   height: 27px;
-  border-bottom: solid #99E2D0 4px;
+  border-bottom: solid #99e2d0 4px;
 }
 
 footer {
   background: #353535;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 22px 0;
 }
 
@@ -61,16 +60,16 @@ footer {
 
 @keyframes button {
   0% {
-    background: linear-gradient(360deg, #9356DC -11.44%, #FF79DA 123.93%);
+    background: linear-gradient(360deg, #9356dc -11.44%, #ff79da 123.93%);
   }
   100% {
-    background: linear-gradient(360deg, #9356DC -11.44%, #FF79DA 123.93%);
+    background: linear-gradient(360deg, #9356dc -11.44%, #ff79da 123.93%);
     opacity: 85%;
   }
 }
 .iDivHeart:hover .iHearSolid {
   display: block;
-  background: -webkit-linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background: -webkit-linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -108,7 +107,7 @@ footer {
 }
 
 .loader__i {
-  background: -webkit-linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background: -webkit-linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -120,17 +119,47 @@ footer {
   height: 50px;
 }
 
-.index {
+.whole_body {
   animation: loader-body 2000ms 1000ms both;
 }
-.index header {
+.whole_body header {
   animation: parts 2000ms 600ms both;
 }
-.index .fonctionning {
+.whole_body .fonctionning {
   animation: parts 2000ms 850ms both;
 }
-.index .restaurants {
-  animation: parts 2000ms 1100ms both;
+.whole_body .restaurants {
+  animation: parts 1900ms 1100ms both;
+}
+.whole_body .article1 {
+  animation: parts 2000ms 100ms both;
+}
+.whole_body .article2 {
+  animation: parts 2000ms 200ms both;
+}
+.whole_body .article3 {
+  animation: parts 2000ms 300ms both;
+}
+.whole_body .article4 {
+  animation: parts 2000ms 400ms both;
+}
+.whole_body .article5 {
+  animation: parts 2000ms 500ms both;
+}
+.whole_body .article6 {
+  animation: parts 2000ms 600ms both;
+}
+.whole_body .article7 {
+  animation: parts 2000ms 700ms both;
+}
+.whole_body .article8 {
+  animation: parts 2000ms 800ms both;
+}
+.whole_body .article9 {
+  animation: parts 2000ms 900ms both;
+}
+.whole_body .article10 {
+  animation: parts 2000ms 1000ms both;
 }
 
 @keyframes loader {
@@ -167,7 +196,7 @@ footer {
   0% {
     opacity: 0;
   }
-  60% {
+  30% {
     opacity: 0;
   }
   100% {
@@ -219,50 +248,6 @@ footer {
     width: calc(82.2% - 70px);
   }
 }
-.reserve__menu__button:hover {
-  animation-name: button;
-  animation-duration: 250ms;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
-  cursor: pointer;
-}
-
-.button:hover {
-  animation-name: button;
-  animation-duration: 250ms;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
-}
-
-@keyframes button {
-  0% {
-    background: linear-gradient(360deg, #9356DC -11.44%, #FF79DA 123.93%);
-  }
-  100% {
-    background: linear-gradient(360deg, #9356DC -11.44%, #FF79DA 123.93%);
-    opacity: 85%;
-  }
-}
-.iDivHeart:hover .iHearSolid {
-  display: block;
-  background: -webkit-linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-}
-.iDivHeart:hover .iHearRegular {
-  display: none;
-}
-
-body {
-  max-width: 768px;
-  margin: auto;
-}
-
-header {
-  text-align: center;
-}
-
 .mainTitle {
   padding: 20px 0px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
@@ -278,7 +263,7 @@ h1 {
 .location {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  background: #EAEAEA;
+  background: #eaeaea;
   display: flex;
   justify-content: center;
   z-index: 0;
@@ -311,7 +296,7 @@ h2 {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
-  background: linear-gradient(360deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background: linear-gradient(360deg, #9356dc -11.44%, #ff79da 123.93%);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   border-radius: 25px;
   border: none;
@@ -324,14 +309,12 @@ h2 {
   margin: 0 0 16px 25px;
   font-size: 18px;
 }
-
 .footer__footers {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   margin-left: 25px;
 }
-
 .footer__footers__p {
   margin: 4px 0;
 }
@@ -419,8 +402,8 @@ h2 {
   height: 25px;
   margin: 0 0 0 0;
   border-radius: 50px;
-  background: #9356DC;
-  color: #FFFFFF;
+  background: #9356dc;
+  color: #ffffff;
   font-size: 14px;
 }
 
@@ -504,7 +487,7 @@ h2 {
   right: 15px;
   top: 15px;
   margin: 0;
-  background: #99E2D0;
+  background: #99e2d0;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
   border-radius: 2px;
 }
@@ -548,43 +531,6 @@ h2 {
     margin: 25px 50px;
   }
 }
-.menu__main_div__appetizer__article:hover .menu__main_div__appetizer__article__divI {
-  animation-name: activation__food;
-  animation-duration: 200ms;
-  animation-timing-function: linear;
-  transform-origin: right;
-  animation-fill-mode: forwards;
-}
-.menu__main_div__appetizer__article:hover .menu__main_div__appetizer__article__price {
-  animation-name: activation__food;
-  animation-duration: 200ms;
-  animation-timing-function: linear;
-  animation-fill-mode: forwards;
-}
-.menu__main_div__appetizer__article:hover .menu__main_div__appetizer__article__section {
-  animation-name: text__overflow;
-  animation-duration: 200ms;
-  animation-timing-function: linear;
-  animation-fill-mode: forwards;
-  transform-origin: left;
-}
-
-@keyframes activation__food {
-  0% {
-    transform: translateX(0px);
-  }
-  100% {
-    transform: translateX(-60px);
-  }
-}
-@keyframes text__overflow {
-  0% {
-    transform: scaleX(1);
-  }
-  100% {
-    width: calc(82.2% - 70px);
-  }
-}
 .iDivHeart {
   position: absolute;
   display: flex;
@@ -619,7 +565,8 @@ h2 {
   font-size: 15px;
 }
 
-.menu__main_div__appetizer__article__section__title, .menu__main_div__appetizer__article__section_p {
+.menu__main_div__appetizer__article__section__title,
+.menu__main_div__appetizer__article__section_p {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -701,7 +648,7 @@ h2 {
 .menu__main_div__appetizer__article {
   position: relative;
   overflow: hidden;
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
   border-radius: 15.0431px;
   width: 93.1%;
@@ -730,7 +677,7 @@ h2 {
   position: absolute;
   transform: translateX(0px);
   right: -60px;
-  background: #99E2D0;
+  background: #99e2d0;
   width: 59px;
   height: 69px;
   margin: 0;
@@ -744,8 +691,8 @@ h2 {
   font-size: 16px;
   width: 20px;
   height: 20px;
-  color: #99E2D0;
-  background: #FFFFFF;
+  color: #99e2d0;
+  background: #ffffff;
   border-radius: 20px;
 }
 
@@ -753,7 +700,7 @@ h2 {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
-  background: linear-gradient(360deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background: linear-gradient(360deg, #9356dc -11.44%, #ff79da 123.93%);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   border-radius: 25px;
   border: none;
@@ -761,46 +708,9 @@ h2 {
   padding: 16px 35px;
 }
 
-.menu__main_div__appetizer__article:hover .menu__main_div__appetizer__article__divI {
-  animation-name: activation__food;
-  animation-duration: 200ms;
-  animation-timing-function: linear;
-  transform-origin: right;
-  animation-fill-mode: forwards;
-}
-.menu__main_div__appetizer__article:hover .menu__main_div__appetizer__article__price {
-  animation-name: activation__food;
-  animation-duration: 200ms;
-  animation-timing-function: linear;
-  animation-fill-mode: forwards;
-}
-.menu__main_div__appetizer__article:hover .menu__main_div__appetizer__article__section {
-  animation-name: text__overflow;
-  animation-duration: 200ms;
-  animation-timing-function: linear;
-  animation-fill-mode: forwards;
-  transform-origin: left;
-}
-
-@keyframes activation__food {
-  0% {
-    transform: translateX(0px);
-  }
-  100% {
-    transform: translateX(-60px);
-  }
-}
-@keyframes text__overflow {
-  0% {
-    transform: scaleX(1);
-  }
-  100% {
-    width: calc(82.2% - 70px);
-  }
-}
 @media screen and (min-width: 768px) {
   body {
-    background: #FFFFFF;
+    background: #ffffff;
   }
   .menu__main_div {
     width: 73.3%;
@@ -808,7 +718,7 @@ h2 {
     margin-top: 375px;
   }
   .header {
-    background: #FFFFFF;
+    background: #ffffff;
   }
   .menu__img {
     top: -674px;
@@ -825,7 +735,7 @@ h2 {
     height: 1220px;
     width: 100%;
     top: 40px;
-    background: #FFFFFF;
+    background: #ffffff;
   }
 }
 

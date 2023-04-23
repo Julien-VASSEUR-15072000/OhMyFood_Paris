@@ -1,39 +1,35 @@
-@import '../../utils/mixins';
+@media screen and (min-width: 768px) {
+  body {
+    background: #ffffff;
+  }
 
-@import '../../components/menu_article';
+  .menu__main_div {
+    width: 73.3%;
+    margin: auto;
+    margin-top: 375px;
+  }
 
-@media screen and (min-width: 768px){
-    body {
-        background: #FFFFFF;
-    }
+  .header {
+    background: #ffffff;
+  }
 
-    .menu__main_div {
-        width: 73.3%;
-        margin: auto;
-        margin-top: 375px;
-    }
+  .menu__img {
+    top: -674px;
+    z-index: -2;
+    height: 956px;
+    width: 100%;
+  }
 
-    .header {
-        background: #FFFFFF;
-    }
+  .menu {
+    position: relative;
+  }
 
-    .menu__img {
-        top: -674px;
-        z-index: -2;
-        height: 956px;
-        width: 100%;
-    }
-
-    .menu {
-        position: relative;
-    }
-
-    .backgroundForResponsive {
-        position: absolute;
-        z-index: -1;
-        height: 1220px;
-        width: 100%;
-        top: 40px;
-        background: #FFFFFF;
-    }
+  .backgroundForResponsive {
+    position: absolute;
+    z-index: -1;
+    height: 1220px;
+    width: 100%;
+    top: 40px;
+    background: #ffffff;
+  }
 }

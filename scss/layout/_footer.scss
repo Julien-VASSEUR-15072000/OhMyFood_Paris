@@ -1,51 +1,49 @@
-@import '../utils/mixins';
-
-.footer__title {
+.footer {
+  &__title {
     @include Shrikhand;
     margin: 0 0 16px 25px;
     font-size: 18px;
-}
+  }
 
-.footer__footers {
+  &__footers {
     @include fontRoboto500;
     font-size: 16px;
     margin-left: 25px;
-}
-
-.footer__footers__p {
-    margin: 4px 0;
+    &__p {
+      margin: 4px 0;
+    }
+  }
 }
 
 .footer__footers__i {
-    @include flexAICenterJCCenter;
-    margin-right: 11px;
+  @include flexAICenterJCCenter;
+  margin-right: 11px;
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
+  footer {
+    padding-top: 57px;
+    display: flex;
+    flex-direction: row-reverse;
+  }
 
-    footer {
-        padding-top: 57px;
-        display: flex;
-        flex-direction: row-reverse;
-    }
+  .footer__title {
+    margin-right: 50px;
+  }
 
-    .footer__title {
-        margin-right: 50px;
-    }
+  .footer__footers {
+    display: flex;
+    flex-direction: row;
+  }
 
-    .footer__footers {
-        display: flex;
-        flex-direction: row;
-    }
+  .footer__footers__div {
+    margin: 0 4px;
+  }
 
-    .footer__footers__div {
-        margin: 0 4px;
-    }
-
-    .footer__footers__p {
-        @include fontRoboto300;
-        @include flexAICenterJCCenter;
-        margin: 0 4px;
-        align-items: center;
-    }
+  .footer__footers__p {
+    @include fontRoboto300;
+    @include flexAICenterJCCenter;
+    margin: 0 4px;
+    align-items: center;
+  }
 }
