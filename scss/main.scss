@@ -1,17 +1,19 @@
 @import "./utils/mixins";
-@import "./utils/variables";
 
+@import "./base/for_all_pages";
 @import "./base/typography";
 @import "./base/type_selectors";
 
 @import "./components/buttons";
+@import "./components/heart.scss";
 @import "./components/loader";
 @import "./components/menu_article";
+@import "./components/a_footer";
 
 @import "./layout/header";
 @import "./layout/footer";
 
 @import "./pages/home/fonctionning.scss";
 @import "./pages/home/restaurants.scss";
-@import "./pages/menu/menu";
-@import "./pages/menu/menu_media_query";
+@import "./pages/menus/menu";
+@import "./pages/menus/menu_media_query";

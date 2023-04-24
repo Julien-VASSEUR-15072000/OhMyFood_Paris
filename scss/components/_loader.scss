@@ -1,40 +1,15 @@
 .loader {
-  position: absolute;
-  right: 50%;
-  top: 500px;
-  margin: -45px;
-  align-items: center;
-  width: 90px;
-  height: 90px;
-  z-index: 100;
-  @include backF6F6F6;
-  border-radius: 20px;
+  @include loaders;
   animation: loader 3000ms forwards;
 }
 
 .loader2 {
-  position: absolute;
-  right: 50%;
-  top: 500px;
-  margin: -45px;
-  align-items: center;
-  width: 90px;
-  height: 90px;
-  z-index: 100;
-  @include backF6F6F6;
-  border-radius: 20px;
+  @include loaders;
   animation: loader2 3000ms forwards;
 }
 
 .loader__i {
-  background: -webkit-linear-gradient(
-    193.33deg,
-    #9356dc -11.44%,
-    #ff79da 123.93%
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
+  @include fontLinearGradient;
   display: block;
   text-align: center;
   margin: 0 auto;

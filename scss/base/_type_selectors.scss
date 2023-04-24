@@ -11,6 +11,10 @@ h1 {
   margin: 0;
 }
 
+h2 {
+  @include fontRoboto700;
+}
+
 h3 {
   @include fontRoboto700;
   margin: 0;
@@ -37,4 +41,10 @@ footer {
   background: #353535;
   color: #ffffff;
   padding: 22px 0;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    max-width: 1440px;
+  }
 }

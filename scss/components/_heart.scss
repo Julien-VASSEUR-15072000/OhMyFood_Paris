@@ -1,0 +1,18 @@
+.iDivHeart {
+  position: absolute;
+  @include flexAICenterJCCenter;
+  z-index: 2029;
+  right: 25px;
+  bottom: 33px;
+  .iHearSolid {
+    display: none;
+  }
+}
+
+.iDivHeartStatic {
+  position: static;
+}
+
+.iHearSolid {
+  display: none;
+}
