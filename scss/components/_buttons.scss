@@ -15,13 +15,3 @@
     opacity: 85%;
   }
 }
-
-.iDivHeart:hover {
-  .iHearSolid {
-    @include fontLinearGradient;
-    display: block;
-  }
-  .iHearRegular {
-    display: none;
-  }
-}

@@ -16,3 +16,24 @@
 .iHearSolid {
   display: none;
 }
+
+.iDivHeart:hover {
+  .iHearSolid {
+    animation: heart 1000ms;
+    @include fontLinearGradient;
+    display: block;
+  }
+  .iHearRegular {
+    display: none;
+  }
+}
+
+@keyframes heart {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
